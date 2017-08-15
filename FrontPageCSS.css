@@ -4,21 +4,22 @@
 	padding: 0;
 	outline: 0;
 }
-html {
-	max-height: 900px;
-}
+
 body{
 	background-color: rgb(0,173,255);
-	max-height: 900px;
-	
+	height: 900px;
+	max-height: 100%;
+	width: 1500px;
+	max-width: 100%;
 }
 #logoContainer {
 	width: 100%;
-	height: 100px;
+	height: 11.1111%;
     display: block;
     overflow: hidden;
 	top: 0;	
 	background-color: rgb(102,102,102);
+	margin: auto;
 	
 }
 #logo {
@@ -26,7 +27,7 @@ body{
 	top: -250%;
 	left: 0;
     height: 600%;
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -34,6 +35,7 @@ body{
 #navigationBar {
 	display: inline;	
 	background: linear-gradient(rgb(102,102,102), rgb(0,173,255));
+	height: 8%; /*72px*/
 	position: absolute;
 	right: 0px;
 	left: 0px;
@@ -46,11 +48,12 @@ body{
 .dropbtn {
 	background: linear-gradient(rgb(0,173,255), rgb(102,102,102));
     color: white;
-    padding: 16px;    
-    font-size: 16px;
+    padding: 1em; /*16px*/
+    font-size: 1.25vw;
     border: none;
     cursor: pointer;
     width: 100%;
+    height: 100%;
  	border: 2px inset black;
 }
 
@@ -61,6 +64,7 @@ body{
     display: inline-block;
     padding: 0 1%;
     width: 20%;
+    height: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -82,7 +86,9 @@ body{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    
+}
+.dropdown-content a:visited {
+	color: white;
 }
 
 /* Change color of dropdown links on hover */
@@ -100,25 +106,17 @@ body{
 
 #ADLOC1 {
 	position: relative;
-	width: 728px;
-	height: 90px;
-	margin: 10px auto;
-	top: -550px;
+	width: 53.294%; /*728px*/
+	height: 10%; /*90px*/
+	margin: .732% auto;
+	top: 6%;
 	background-color: white;
 }
 
 #ADLOC1 h1 {
-	line-height: 90px;
+	line-height: 100%;
 }
 
-#ADLOC2 {
-	position: relative;
-	width: 300px;
-	height: 600px;
-	top: 60px;
-	background-color: white;
-	
-}
 
 #lessonList {
 	height: 100%;
@@ -136,11 +134,11 @@ body{
 }
 #videoPlayerContainer {
 	position: relative;
-	top: -550px;
+	top: 8%;
 	margin: auto;
 	display: block;
-	height: 378px;
-	width: 672px;
+	height: 40vw;
+	width: 60vw;
 }
 #videoPlayer {
 	position: relative;
@@ -151,15 +149,11 @@ body{
 }
 
 .hwANDlp {
-	position: relative;
-	float: right;
-	margin: auto;
-	display: block;
-	width: 200px;
-	height: 100px;
+	width: 15vw;
+	height: 10vh;
 	text-align: center;
-	line-height: 50px;
-	font-size: 2em;
+	line-height: 150%;
+	font-size: 3vmin;
 	background: linear-gradient(rgb(0,173,255), rgb(102,102,102));
 	border-style: inset;
 	border-color: black;
@@ -167,7 +161,6 @@ body{
 }
 
 .hwANDlp a {
-	padding: 0px;
 	display: block;
 	text-decoration: none;
 	font-weight: bold;
@@ -177,14 +170,19 @@ body{
 	color: black;
 }
 #homeworkContainer {
-	top: -925px;
-	right: 5%;
+	position: relative;
+	float: left;
+	top: 8%;
+	left: 3%;
+	clear: both;
 }
 
 #lessonPlanContainer {
+	position: relative;
+	float: left;
 	clear: both;
-	top: -875px;
-	right: 5%;
+	top: 13%;
+	left: 3%;
 }
 
 #logInForm  {
@@ -192,8 +190,8 @@ body{
 	float: right;
 	right: 5%;
 	display: block;
-	height: 20px;
-	top: -1375px;
+	height: 2.222%;
+	top: -10%;
 	clear: both;
 }
 
@@ -204,9 +202,9 @@ body{
 
 #videoDescription {
 	position: relative;
-	top: -530px;
-	left: 342px;
-	max-width: 50%;
+	top: 8%;
+	margin: auto;
+	width: 60vw;
 	background-color:rgb(102,102,102);
 	color: white;
 }
