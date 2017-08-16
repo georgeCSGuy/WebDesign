@@ -155,14 +155,26 @@
 			</div>
 			<ul class = "btnBar">
 				<li>
-					<a href = "../Lesson 1/JavaLesson1.html" >Previous</a>
+					<a href = "{{ url_for('go_to_lesson1') }}" >Previous</a>
 				</li>
+			{% block body2 %}
+			{% if session['logged_in'] %}
+			<div style="visibility:visible">
+			{% else %}
+			<li>
+				<p> Login For Premium Content </p>
+			</li>
+			<div style="visibility:hidden">
+			{% endif %}
+			{% endblock %}
 				<li>
+
 					<a href = "Homework2.pdf">Download Homework</a>
 				</li>
 				<li>
 					<a href = "Lesson 1.pdf" download>Download Lesson Plan</a>
 				</li>
+			</div>
 				<li>
 					<a href = "../Lesson 3/JavaLesson3.html" >Next</a>
 				</li>

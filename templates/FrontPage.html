@@ -14,7 +14,7 @@
 		</div>
 		
 		<div id = "logInForm">
-			{% block body %}
+{% block body %}
 {% if session['logged_in'] %}
 <p>You're logged in already!</p>
     <form action="/logout">
@@ -85,7 +85,7 @@
 		</div>
 		
 		<div id = "ADLOC1">
-			<img id = "AD1" src = "../AdPlaceholders/Leaderboard.png">
+			<img id = "AD1" src = "{{ url_for('static', filename='AdPlaceholders/Leaderboard.png') }}">
 		</div>
 		
 		<div id = "videoPlayerContainer">
