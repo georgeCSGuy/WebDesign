@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>georgeTheCSGuy</title>
+	<link href = "JavaLesson1CSS.css" type = "text/css" rel = "stylesheet">
+</head>
+	<body>
+	
+		<!-- Logo at top of screen. -->
+		<div id = "logoContainer">
+				<img id = "logo" src = "../Solid_smallText.jpg">
+		</div>
+		
+		<div id = "logInForm">
+			<form>
+  				<input type="text" class = "field" name="userName" placeholder = "Username"><br>
+  				<input type="password" class = "field" name="password" placeholder = "Password"><br>
+  				<label><input id = "remMe" type = "checkbox" name = "remMe">Remember Me</label><br>
+  				<input id = "submitButton" type="submit" value="Submit">
+  				<input id = "newUser" type="button" value = "New User?">
+			</form>
+		</div>
+		
+		<!-- Navigation menu, need to make this sticky at some point. -->
+		<div id = "navMenuContainer">
+			<ul id = "navigationBar">
+			<li>	
+				<div class="dropdown">
+				  <button class="dropbtn">Java</button>
+					  <div class="dropdown-content">
+					    <a href="JavaLesson1.html">Lesson 1: Hello World</a>
+					    <a href="../Lesson 2/JavaLesson2.html">Lesson 2: Basic Arithmetic</a>
+					    <a href="../Lesson 3/JavaLesson3.html">Lesson 3: Data Types and Variables</a>
+					    <a href="../Lesson 4/JavaLesson4.html">Lesson 4: Control Flow</a>
+					    <a href="../Lesson 5/JavaLesson5.html">Lesson 5: Arrays</a>
+					  </div>
+				</div>
+			</li>
+			<li>	
+				<div class="dropdown">
+				  <button class="dropbtn">Coming Soon</button>
+					  <div class="dropdown-content">
+					  </div>
+				</div>
+			</li>
+			<li>	
+				<div class="dropdown">
+				  <button class="dropbtn">Coming Soon</button>
+					  <div class="dropdown-content">
+					  </div>
+				</div>
+			</li>
+			<li>	
+				<div class="dropdown">
+				  <button class="dropbtn">About</button>
+					  <div class="dropdown-content">
+					 	 <a href="../FrontPage/FrontPage.html">Home</a>
+					  </div>
+				</div>
+			</li>
+			<li>	
+				<div class="dropdown">
+				  <button class="dropbtn">Contact</button>
+					  <div class="dropdown-content">
+					  </div>
+				</div>
+			</li>
+		</ul>
+		</div>
+		
+		<div id = "ADLOC1">
+			<img id = "AD1" src = "../AdPlaceholders/Leaderboard.png">
+		</div>
+		
+		<div id = "contentStream">
+		<h1>Lesson 1: Hello World</h1>
+			<div id = "videoPlayerContainer">
+				<iframe id = "videoPlayer" src="https://www.youtube.com/embed/g_s17HMFaug" allowfullscreen>
+				</iframe>
+			</div>
+			<div>
+				<h3 class = "subheading">1.1 Introduction</h3>
+				<p>
+				In this lesson, we will introduce you, the student, to Java programming with a 
+				simple program called “Hello World”. Without human interaction, computers are 
+				little more than shiny pieces of metal. Hidden within that metal is incredible power. 
+				It is up to you, the programmer, to draw that power out. One of the most valuable 
+				features of a programming language, and often the first feature to be taught is 
+				having the computer display something. This program does exactly that, displaying 
+				the phrase “Hello World”. Think of your computer like an infant child, this phrase 
+				will be its first words, a precursor to something magical. 
+				</p>
+				<h3 class = "subheading">1.2 Setting Up:</h3>
+				<p>
+				To begin, open the application “Eclipse” and create a new Java Project.
+				Name this project “Hello World” and hit finish. 
+				Now expand the project “Hello World”, select the file “src”, right click and navigate to New->Class. 
+				Name this class “Hello_World”, ensure that “public static void main(String[] args)” is checked and hit finish.
+				You can safely ignore the warning at the top. 
+				Congratulations, you have now created the space you will use to write your program! 
+				</p>
+				<h3 class = "subheading">1.3 Writing Your First Code:</h3>
+				<p>
+				For now, don’t worry about what any of this means. 
+				Just know that every project should look like this at the beginning. 
+				We will explore what this means, and why we start like this in a much later lesson. 
+				<br>
+				The task at hand is to make the computer print out a simple statement: “Hello World”. 
+				How do we do that? Let’s break down the problem. 
+				</p>
+				<ul>
+					<li>We want to tell our “system” to do something. </li>
+					<li>We want that something to be an output. </li>
+					<li>We want that output to be printing a phrase.</li>
+					<li>We want that phrase to be “Hello World”.</li>
+				</ul>
+				<p>
+				Fortunately for us, Java has a built in way to do exactly that!
+				Delete the line of code that starts with two “/” marks and type: System.out.print("Hello World");
+				Notice how similar this is to our breakdown of the problem.
+				Hit the run button and watch what happens.
+				</p>	
+				<div id = "ADLOC2">
+					<img id = "AD2" src = "../AdPlaceholders/Medium Rectangle.png">
+				</div>
+				<h3 class = "subheading">1.4 Closing:</h3>
+				<p>
+				Congratulations! You just wrote your first computer program!
+				The “Hello World” program is a very common first program in many languages.
+				It is fairly quick to create and introduces the programmer to basic syntax of a language.
+				Syntax is the set of specific rules that a program needs to run properly. 
+				The core concepts we see in “Hello World”, regarding syntax,
+				are the requirement for curly brackets to enclose blocks of code
+				and the need to finish instructions with a semi-colon.
+				Syntax is a rather complex topic that is difficult to study and learn but very easy pick up over time.
+				Programming is hard. Expect to make a lot of mistakes, especially with syntax, as you learn.
+				</p>
+			</div>
+			<ul class = "btnBar">
+				<li>
+					<a href = "../FrontPage.html" >Previous</a>
+				</li>
+				<li>
+					<a href = "Homework 1.pdf" download>Download Homework</a>
+				</li>
+				<li>
+					<a href = "Lesson 1.pdf" download>Download Lesson Plan</a>			</li>
+				<li>
+					<a href = "../Lesson 2/JavaLesson2.html" >Next</a>
+				</li>
+			</ul>
+		</div> <!-- End of Content Stream -->
+	</body>
+</html>
+				
+				
+				
+				
+			
