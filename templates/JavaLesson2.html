@@ -10,7 +10,7 @@
 	
 		<!-- Logo at top of screen. -->
 		<div id = "logoContainer">
-				<img id = "logo" src = "../Solid_smallText.jpg">
+				<img id = "logo" src = "{{ url_for('static', filename='images/Solid_smallText.jpg') }}">
 		</div>
 		
 		<div id = "logInForm">
@@ -86,7 +86,7 @@
 		</div>
 		
 		<div id = "ADLOC1">
-			<img id = "AD1" src = "../AdPlaceholders/Leaderboard.png">
+			<img id = "AD1" src = "{{ url_for('static', filename='AdPlaceholders/Leaderboard.png') }}">
 		</div>
 		
 		<div id = "contentStream">
@@ -138,7 +138,7 @@
 				Hit the run button and watch what happens.
 				</p>	
 				<div id = "ADLOC2">
-					<img id = "AD2" src = "../AdPlaceholders/Medium Rectangle.png">
+					<img id = "AD2" src = "{{ url_for('static', filename='AdPlaceholders/Medium Rectangle.png') }}">
 				</div>
 				<h3 class = "subheading">1.4 Closing:</h3>
 				<p>
@@ -169,14 +169,14 @@
 			{% endblock %}
 				<li>
 
-					<a href = "Homework2.pdf">Download Homework</a>
+					<a href = "{{ url_for('static', filename='lessons/Lesson2/Homework2.pdf') }}">Download Homework</a>
 				</li>
 				<li>
 					<a href = "Lesson 1.pdf" download>Download Lesson Plan</a>
 				</li>
 			</div>
 				<li>
-					<a href = "../Lesson 3/JavaLesson3.html" >Next</a>
+					<a href = "{{ url_for('go_to_lesson3') }}" >Next</a>
 				</li>
 			</ul>
 		</div> <!-- End of Content Stream -->
