@@ -10,12 +10,10 @@ body{
 	height: 900px;
 	max-height: 100%;
 	width: 1500px;
-	min-width: 728px;
 	max-width: 100%;
 }
 #logoContainer {
 	width: 100%;
-	min-width: 728px;
 	height: 11.1111%;
     display: block;
     overflow: hidden;
@@ -26,7 +24,6 @@ body{
 }
 #logo {
 	position: relative;
-	min-width: 728px;
 	top: -250%;
 	left: 0;
     height: 600%;
@@ -37,7 +34,6 @@ body{
 
 #navigationBar {
 	display: inline;	
-	min-width: 728px;
 	background: linear-gradient(rgb(102,102,102), rgb(0,173,255));
 	height: 8%; /*72px*/
 	position: absolute;
@@ -141,10 +137,11 @@ body{
 	position: relative;
 	clear:both;
 	margin: auto;
-	min-width:728px;
+	width:728px;
 	max-width: 90vw;
 	height: auto;
 	top: 100px;
+	overflow: scroll;
 	background-color: white;
 }
 .subheading {
@@ -195,40 +192,22 @@ body{
 	display: block;
 }
 
-.btnBar {
-	display: block;	
-	width: 100%;
-	background: white;
-	height: 4%; /*72px*/
-	position: absolute;
-	right: 0px;
-	left: 0px;
-}
-
-.btnBar li {
-	display: inline-block;
-	margin: auto;
-	clear: both;
-	width: 24%;
-	padding: 0 1%;
-	height: 100%;
-}
-.btnBar a, a:visited {
-	display: block;
-	text-align: center;
+.navBtn {
 	margin: auto;
 	background: linear-gradient(rgb(0,173,255), rgb(102,102,102));
     color: white;
-    padding: 1em; /*16px*/
-    font-size: 1.5vw;
-    line-height: 100%;
+    padding: 16px;    
+    font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
- 	clear: both;
- 	text-decoration: none;
-	
+    width: 20%;
+ 	border: 2px inset black;
+}
+
+#next {
+	position: relative;
+	clear: both;
+	float: right;
 }
 
 #logInForm  {

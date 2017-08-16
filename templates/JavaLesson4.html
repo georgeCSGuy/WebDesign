@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>georgeTheCSGuy</title>
-	<link href = "JavaLesson5CSS.css" type = "text/css" rel = "stylesheet">
+	<link href = "{{ url_for('static', filename='styles/JavaLesson1CSS.css') }}" type = "text/css" rel = "stylesheet">
 </head>
 	<body>
 	
@@ -14,13 +14,28 @@
 		</div>
 		
 		<div id = "logInForm">
-			<form>
-  				<input type="text" class = "field" name="userName" placeholder = "Username"><br>
-  				<input type="password" class = "field" name="password" placeholder = "Password"><br>
-  				<label><input id = "remMe" type = "checkbox" name = "remMe">Remember Me</label><br>
-  				<input id = "submitButton" type="submit" value="Submit">
-  				<input id = "newUser" type="button" value = "New User?">
-			</form>
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+    <form action="/logout">
+      <input type="submit" value="Logout">
+    </form>
+{% else %}
+    <form action="/login" method="POST">
+      <input type="username" class = "field" name="username" placeholder = "Username"><br>
+      <input type="password" class = "field" name="password" placeholder = "Password"><br>
+      <label><input id = "remMe" type = "checkbox" name = "remMe">Remember Me</label><br>
+      <input id = "submitButton" type="submit" value="Log in">
+    </form>
+
+    <form action="/newUser" method="POST">
+      <p>Sign up today</p>
+      <input type="username" name="username1" placeholder="Username">
+      <input type="password" name="password1" placeholder="Password">
+      <input type="submit" value="submit">
+    </form>
+{% endif %}
+{% endblock %}
 		</div>
 		
 		<!-- Navigation menu, need to make this sticky at some point. -->
@@ -30,11 +45,11 @@
 				<div class="dropdown">
 				  <button class="dropbtn">Java</button>
 					  <div class="dropdown-content">
-					    <a href="../Lesson 1/JavaLesson1.html">Lesson 1: Hello World</a>
-					    <a href="../Lesson 2/JavaLesson2.html">Lesson 2: Basic Arithmetic</a>
-					    <a href="../Lesson 3/JavaLesson3.html">Lesson 3: Data Types and Variables</a>
-					    <a href="../Lesson 4/JavaLesson4.html">Lesson 4: Control Flow</a>
-					    <a href="JavaLesson5.html">Lesson 5: Arrays</a>
+						    <a href="{{ url_for('go_to_lesson1') }}">Lesson 1: Hello World</a>
+					    <a href="{{ url_for('go_to_lesson2') }}">Lesson 2: Basic Arithmetic</a>
+					    <a href="{{ url_for('go_to_lesson3') }}">Lesson 3: Data Types and Variables</a>
+					    <a href="{{ url_for('go_to_lesson4') }}">Lesson 4: Control Flow</a>
+					    <a href="{{ url_for('go_to_lesson5') }}">Lesson 5: Arrays</a>
 					  </div>
 				</div>
 			</li>
@@ -75,7 +90,7 @@
 		</div>
 		
 		<div id = "contentStream">
-		<h1>Lesson 5: Arrays</h1>
+		<h1>Lesson 4: Control Flow</h1>
 			<div id = "videoPlayerContainer">
 				<iframe id = "videoPlayer" src="https://www.youtube.com/embed/g_s17HMFaug" allowfullscreen>
 				</iframe>
@@ -140,7 +155,7 @@
 			</div>
 			<ul class = "btnBar">
 				<li>
-					<a href = "../Lesson 4/JavaLesson4.html" >Previous</a>
+					<a href = "../Lesson 3/JavaLesson3.html" >Previous</a>
 				</li>
 				<li>
 					<a href = "Homework 1.pdf" download>Download Homework</a>
