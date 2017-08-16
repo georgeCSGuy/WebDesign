@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>georgeTheCSGuy</title>
-	<link href = "{{ url_for('static', filename='styles/JavaLesson1CSS.css') }}" type = "text/css" rel = "stylesheet">
+	<link href = "{{ url_for('static', filename='styles/JavaLesson2CSS.css') }}" type = "text/css" rel = "stylesheet">
 </head>
 	<body>
 	
@@ -152,9 +152,31 @@
 				Programming is hard. Expect to make a lot of mistakes, especially with syntax, as you learn.
 				</p>
 			</div>
-
-			<button class="navBtn" id = "previous">Previous</button>
-			<button class="navBtn" id = "next"><a href="{{ url_for('go_to_lesson2') }}">Next</a></button> 
+				<ul class = "btnBar">
+				<li>
+					<a href = "{{ url_for('home') }}" >Previous</a>
+				</li>
+				{% block body4 %}
+				{% if session['logged_in'] %}
+				<div style="visibility:visible">
+				{% else %}
+				<li>
+				<p> Login For Premium Content </p>
+				</li>
+				<div style="visibility:hidden">
+				{% endif %}
+				{% endblock %}
+				<li>
+					<a href = "{{ url_for('static', filename='lessons/Lesson4/Homework1.pdf') }}" download>Download Homework</a>
+				</li>
+				<li>
+					<a href = "{{ url_for('static', filename='lessons/Lesson4/Lesson1.pdf') }}" download>Download Lesson Plan</a>
+				</li>
+			</div>
+				<li>
+					<a href = "{{ url_for('go_to_lesson2') }}" >Next</a>
+				</li>
+			</ul>
 		</div> <!-- End of Content Stream -->
 	</body>
 </html>

@@ -17,7 +17,7 @@ def home():
     else:
         return render_template('FrontPage.html')
         #return "Hello " + session['user'] + "!  <a href='/logout'>Logout</a>"
- 
+
 @app.route('/lesson1')
 def go_to_lesson1():
     return render_template('JavaLesson1.html')
@@ -37,6 +37,10 @@ def go_to_lesson4():
 @app.route('/lesson5')
 def go_to_lesson5():
     return render_template('JavaLesson5.html')
+
+@app.route('/comingSoon')
+def coming_soon():
+    return render_template('ComingSoon.html')
 
 @app.route('/login', methods=['POST'])
 def do_admin_login():

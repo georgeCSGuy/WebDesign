@@ -33,8 +33,14 @@ TODO
 	Every time there is a link to a file in the static folder do this:
 	{{ url_for('static', filename='lesson2/someting.pdf') }}
 
-2. Add login form to every page=> i dont know why you can only actually see it on the home page
+2. [CSS]Add login form to every page=> i dont know why you can only actually see it on the home page
 
-3. I made the premium content script on the javalesson2.html page on the bottom.  need to integrate to other pages and fix css
+3. [PY]Instead of having different routes for each page, what about one route method with a parameter, should help with the login script too
 
-4. Fix css for login form
+4. [CSS]Fix css for login form
+
+5. [CSS]Find packages/framework for the css
+
+7.  [PY]for login route--add parameter to return back to that page
+
+8. [CSS]Fix the css for front page
