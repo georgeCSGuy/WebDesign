@@ -4,21 +4,22 @@
 	padding: 0;
 	outline: 0;
 }
-html {
-	max-height: 900px;
-}
+
 body{
 	background-color: rgb(0,173,255);
-	max-height: 1600px;
-	
+	height: 900px;
+	max-height: 100%;
+	width: 1500px;
+	max-width: 100%;
 }
 #logoContainer {
 	width: 100%;
-	height: 100px;
+	height: 11.1111%;
     display: block;
     overflow: hidden;
 	top: 0;	
 	background-color: rgb(102,102,102);
+	margin: auto;
 	
 }
 #logo {
@@ -26,7 +27,7 @@ body{
 	top: -250%;
 	left: 0;
     height: 600%;
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -34,6 +35,7 @@ body{
 #navigationBar {
 	display: inline;	
 	background: linear-gradient(rgb(102,102,102), rgb(0,173,255));
+	height: 8%; /*72px*/
 	position: absolute;
 	right: 0px;
 	left: 0px;
@@ -46,11 +48,12 @@ body{
 .dropbtn {
 	background: linear-gradient(rgb(0,173,255), rgb(102,102,102));
     color: white;
-    padding: 16px;    
-    font-size: 16px;
+    padding: 1em; /*16px*/
+    font-size: 1.25vw;
     border: none;
     cursor: pointer;
     width: 100%;
+    height: 100%;
  	border: 2px inset black;
 }
 
@@ -61,6 +64,7 @@ body{
     display: inline-block;
     padding: 0 1%;
     width: 20%;
+    height: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -82,7 +86,9 @@ body{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    
+}
+.dropdown-content a:visited {
+	color: white;
 }
 
 /* Change color of dropdown links on hover */
@@ -100,30 +106,42 @@ body{
 
 #ADLOC1 {
 	position: relative;
-	top: 50px;
-	clear: both;
-	width: 728px;
-	height: 90px;
-	margin: 10px auto;
-	background-color: white;
+	width: 728px; /*53.294%; /*728px*/
+	height: 90px; /*10%; /*90px*/
+	margin: .732% auto;
+	top: 6%;
 }
 
 #ADLOC1 h1 {
-	line-height: 90px;
+	line-height: 100%;
 }
-#ADLOC2 {
-	background-color: white;
-	height: 600px;
-	width: 300px;
+
+
+#lessonList {
+	height: 100%;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    text-align: center;
+    background-color: white;
 }
+
+
+#lessonList a:link, a:visited{
+	color: black;
+}
+
 
 #contentStream {
 	position: relative;
 	clear:both;
 	margin: auto;
-	width: 728px;
-	height: 1236px;
-	top: -550px;
+	width:728px;
+	max-width: 90vw;
+	height: auto;
+	top: 100px;
+	overflow: scroll;
 	background-color: white;
 }
 .subheading {
@@ -146,12 +164,25 @@ body{
 	font-size: 3em;
 	text-align: center;
 }
+#ADLOC2 {
+	position: relative;
+	display: inline;
+	width: 250px;
+	height: 300px;
+
+}
+#AD2 {
+	position: relative;
+	display: block;
+	margin: auto;
+	clear: both;
+}
 #videoPlayerContainer {
 	position: relative;
 	margin: auto;
 	display: block;
-	height: 378px;
-	width: 672px;
+	height: 40vw;
+	width: 60vw;
 }
 #videoPlayer {
 	position: relative;

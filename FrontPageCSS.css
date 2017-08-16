@@ -10,10 +10,12 @@ body{
 	height: 900px;
 	max-height: 100%;
 	width: 1500px;
+	min-width: 728px;
 	max-width: 100%;
 }
 #logoContainer {
 	width: 100%;
+	min-width: 728px;
 	height: 11.1111%;
     display: block;
     overflow: hidden;
@@ -24,16 +26,19 @@ body{
 }
 #logo {
 	position: relative;
+	min-width: 728px;
 	top: -250%;
 	left: 0;
     height: 600%;
     width: 100%;
     display: block;
     margin: auto;
+    z-index: 2;
 }
 
 #navigationBar {
 	display: inline;	
+	min-width: 728px;
 	background: linear-gradient(rgb(102,102,102), rgb(0,173,255));
 	height: 8%; /*72px*/
 	position: absolute;
@@ -49,7 +54,7 @@ body{
 	background: linear-gradient(rgb(0,173,255), rgb(102,102,102));
     color: white;
     padding: 1em; /*16px*/
-    font-size: 1.25vw;
+    font-size: 2vh;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -106,11 +111,10 @@ body{
 
 #ADLOC1 {
 	position: relative;
-	width: 53.294%; /*728px*/
-	height: 10%; /*90px*/
+	width: 728px;
+	height: 90px;
 	margin: .732% auto;
 	top: 6%;
-	background-color: white;
 }
 
 #ADLOC1 h1 {

@@ -2,22 +2,35 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Lesson 1: Hello World</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>georgeTheCSGuy</title>
 	<link href = "JavaLesson1CSS.css" type = "text/css" rel = "stylesheet">
 </head>
 	<body>
 	
+		<!-- Logo at top of screen. -->
 		<div id = "logoContainer">
-			<img id = "logo" src = "Solid_smallText.jpg">
+				<img id = "logo" src = "Solid_smallText.jpg">
 		</div>
 		
+		<div id = "logInForm">
+			<form>
+  				<input type="text" class = "field" name="userName" placeholder = "Username"><br>
+  				<input type="password" class = "field" name="password" placeholder = "Password"><br>
+  				<label><input id = "remMe" type = "checkbox" name = "remMe">Remember Me</label><br>
+  				<input id = "submitButton" type="submit" value="Submit">
+  				<input id = "newUser" type="button" value = "New User?">
+			</form>
+		</div>
+		
+		<!-- Navigation menu, need to make this sticky at some point. -->
 		<div id = "navMenuContainer">
 			<ul id = "navigationBar">
 			<li>	
 				<div class="dropdown">
 				  <button class="dropbtn">Java</button>
 					  <div class="dropdown-content">
-					    <a href="#">Lesson 1: Hello World</a>
+					    <a href="JavaLesson1.html">Lesson 1: Hello World</a>
 					    <a href="#">Lesson 2: Basic Arithmetic</a>
 					    <a href="#">Lesson 3: Data Types and Variables</a>
 					    <a href="#">Lesson 4: Control Flow</a>
@@ -43,7 +56,7 @@
 			</li>
 			<li>	
 				<div class="dropdown">
-				  <button class="dropbtn"><a href = "FrontPage.html">About</a></button>
+				  <button class="dropbtn">About</button>
 					  <div class="dropdown-content">
 					  </div>
 				</div>
@@ -57,23 +70,11 @@
 			</li>
 		</ul>
 		</div>
-		<div id = "logInForm">
-			<form>
-  				<input type="text" class = "field" name="userName" placeholder = "Username"><br>
-  				<input type="password" class = "field" name="password" placeholder = "Password"><br>
-  				<label><input id = "remMe" type = "checkbox" name = "remMe">Remember Me</label><br>
-  				<input id = "submitButton" type="submit" value="Submit">
-  				<input id = "newUser" type="button" value = "New User?">
-			</form>
-		</div>
 		
 		<div id = "ADLOC1">
-		<h1>HERE BE ADS</h1>
+			<img id = "AD1" src = "Leaderboard.png">
 		</div>
 		
-		<div id = "ADLOC2">
-		<h1>HERE BE ADS</h1>
-		</div>
 		<div id = "contentStream">
 		<h1>Lesson 1: Hello World</h1>
 			<div id = "videoPlayerContainer">
@@ -122,6 +123,9 @@
 				Notice how similar this is to our breakdown of the problem.
 				Hit the run button and watch what happens.
 				</p>	
+				<div id = "ADLOC2">
+					<img id = "AD2" src = "Medium Rectangle.png">
+				</div>
 				<h3 class = "subheading">1.4 Closing:</h3>
 				<p>
 				Congratulations! You just wrote your first computer program!
